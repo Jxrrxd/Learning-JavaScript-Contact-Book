@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget
+  id="com.example.contactbook"
+  version="1.0.0"
+  android-versionCode="1"
+  xmlns="https://www.w3.org/ns/widgets">
+
+  <name>ContactBook</name>
+  <description>A simple contact book to manage contacts and avatars.</description>
+  <author>Your Name</author>
+
+  <!-- Main entry point -->
+  <content src="index.html" />
+
+  <!-- General preferences -->
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="false" />
+  <preference name="webviewbounce" value="false" />
+
+  <!-- Allow JavaScript fetch and file uploads -->
+  <access origin="*" />
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
+
+  <!-- Plugins that may be needed -->
+  <plugin name="cordova-plugin-file" />
+  <plugin name="cordova-plugin-camera" />
+  <plugin name="cordova-plugin-dialogs" />
+
+  <!-- Platforms (optional but helpful for VoltBuilder) -->
+  <platform name="android" />
+  <platform name="ios" />
+</widget>

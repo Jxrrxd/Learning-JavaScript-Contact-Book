@@ -1,0 +1,115 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Container styling */
+form, .container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Headings */
+h1, h2, h5 {
+  text-align: center;
+  color: #005b96;
+}
+
+/* Form elements */
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  background-color: #f0f0f0;
+}
+
+/* Buttons */
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005aab;
+}
+
+/* Avatar image styling */
+#avatarImage img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Table of contacts */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+tr {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+tr:hover {
+  background-color: #f0f8ff;
+}
+
+td img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 500px) {
+  form, .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
